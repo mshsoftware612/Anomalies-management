@@ -4,9 +4,9 @@ dotenv.config();
 import mysql from 'mysql2';
 
 const pool = mysql.createPool({
-    host: process.env.DB_HOST || 'anomalies-database.cpy2so04y6k0.eu-west-2.rds.amazonaws.com',
+    host: process.env.DB_HOST || 'localhost',
     user: process.env.DB_USER || 'root',
-    password: process.env.DB_PASSWORD || 'mshsoftware612',
+    password: process.env.DB_PASSWORD || 'root',
     database: process.env.DB_NAME || 'FormDB',
     port: process.env.DB_PORT || 3306,
     waitForConnections: true,
